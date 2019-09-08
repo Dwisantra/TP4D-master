@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.okvi.tp4d">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_start_1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_start_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="m">
+        <activity android:name=".Activity.pemohon.BarcodeActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDnqxnMV3hT6B0BY69jjzNPD1z_yvmuta0" />
+
+        <activity android:name=".Activity.pemohon.PemohonProgressSelesaiActivity" />
+        <activity android:name=".Activity.kajari.KajariActionProgressActivity" />
+        <activity android:name=".Activity.petugas.PetugasActionProsesAwalActivity" />
+        <activity android:name=".Activity.petugas.PetugasActionProsesLanjutanActivity" />
+        <activity android:name=".Activity.petugas.PetugasActionPermohonanActivity" />
+        <activity android:name=".Activity.petugas.PetugasBaruProgressSelesaiTolakActivity" />
+        <activity android:name=".Activity.kajari.KajariActionDisposisiActivity" />
+        <activity android:name=".Activity.kajari.KajariBaruProgressSelesaiTolakActivity" />
+        <activity android:name=".Activity.petugas.PetugasHomeActivity" />
+        <activity android:name=".Activity.kajari.KajariHomeActivity" />
+        <activity android:name=".Activity.petugas.LoginPetugasActivity" />
+        <activity android:name=".Activity.kajari.LoginKajariActivity" />
+        <activity android:name=".Activity.petugas.PilihLoginPetugasActivity" />
+        <activity android:name=".Activity.other.VerifikasiActivity" />
+        <activity android:name=".Activity.pemohon.PermohonanBaruDetailActivity" />
+        <activity android:name=".Activity.pemohon.PermohonanBaruActivity" />
+        <activity android:name=".Activity.pemohon.PemohonHomeActivity" />
+        <activity
+            android:name=".Activity.pemohon.PemohonRegistrasiActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.pemohon.PemohonLoginActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.other.SplashScreenActivity"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.other.MainActivity"
+            tools:ignore="InnerclassSeparator" />
+    </application>
+
+</manifest>
